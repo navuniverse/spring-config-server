@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/navuniverse/spring-vault-properties
+        vault:
+          port: 8200
+          host: 127.0.0.1
+  profiles:
+    active: native, git, vault
+server:
+  port: 8888
