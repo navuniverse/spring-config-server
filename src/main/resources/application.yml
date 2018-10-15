@@ -13,6 +13,6 @@ spring:
         native:
           search-locations: classpath:/
   profiles:
-    active: default, native, git, vault
+    active: default, native, git
 server:
   port: 8888
