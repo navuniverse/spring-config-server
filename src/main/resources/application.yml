@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/weekly-drafts/config-repo-spring-cloud-configserver-vault
+          uri: https://github.com/navuniverse/spring-vault-properties
   profiles:
     active: default, native, git
 server:
