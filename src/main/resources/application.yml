@@ -1,17 +1,11 @@
 spring:
   application:
-    name: configserver
+    name: myapp
   cloud:
     config:
       server:
-        vault:
-          port: 8200
-          host: 127.0.0.1
-          default-key: configclient
         git:
           uri: https://github.com/weekly-drafts/config-repo-spring-cloud-configserver-vault
-        native:
-          search-locations: classpath:/
   profiles:
     active: default, native, git
 server:
